@@ -9,7 +9,7 @@
 				<a href="{{ post.link }}">{{ _e('edit') }}</a>
 				<p class="blog-author">
 					<span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> <time datetime="{{ post.date|date('Y-m-d H:i:s') }}">{{ post.date }}</time>
-				</p>
+				</p>	
 				<div class="article-body">
 					{{post.content}}
 					<p> {{ post.duree }} de lecture estimé {{ post.duree ? post.duree : "0"}}  </p>
