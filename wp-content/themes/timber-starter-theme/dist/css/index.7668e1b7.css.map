@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAMA;;;;AAIA;;;;AAKA","sources":["src/scss/_base.scss"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: inherit;\n}\n\nimg,\nvideo {\n  display: block;\n}\n\nbody {\n  background: green;\n}\n"],"names":[],"version":3,"file":"index.7668e1b7.css.map"}

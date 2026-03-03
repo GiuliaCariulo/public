@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  Ce cei est eslar
+  <p>{{ post.content }}</p>
+	<p>{{ qux }}</p>
+	{% for post in posts %}
+		h1 {{ post.title }}
+	{% endfor %}
+	
+	{# {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %} #}
+{% endblock %}
