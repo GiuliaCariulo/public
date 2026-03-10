@@ -8,11 +8,12 @@ a {
   color: inherit;
 }
 
-img, video {
+img,
+video {
   display: block;
 }
 
 body {
-  background: green;
+  /* background: green; */
 }
 /*# sourceMappingURL=index.7668e1b7.css.map */
