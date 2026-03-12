@@ -26,10 +26,14 @@ $context = Timber::context();
 $timber_post     = Timber::get_post();
 $context['page'] = $timber_post;
 
+
+// demander à une ia pour la page taxonomie livre, viens chercher tous les posts taxonomie livre et catégorie féminisme
 $posts     = Timber::get_posts([
     'post_type' => 'post',
 ]);
 $context['posts'] = $posts;
+
+// avec le $ c'est des variables php donc ici je pourrais écrire $articles à la place de $posts
 
 // var_dump($context['posts']);
 Timber::render( array( 'page-' . $timber_post->post_name . '.twig', 'page.twig' ), $context );

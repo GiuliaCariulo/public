@@ -1,18 +1,16 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	< class="content-wrapper">
+	<div class="content-wrapper">
 		<article class="post-type-{{page.post_type}}" id="post-{{page.ID}}">
 			<section class="article-content">
 				<h1 class="article-h1">{{page.post_title}}</h1>
-			
 			</section>
 		</article>
-		
-{% for post in posts %}
-
-<section><article>Je suis un articleeee</article></section>
-		  
-	{% endfor %}
-	</div><!-- /content-wrapper -->
+		<section class="cards-library">
+		{% for post in posts %}
+		{% include 'components/card.twig' %}
+		{% endfor %}
+		</section>
+	</div>
 {% endblock %}
