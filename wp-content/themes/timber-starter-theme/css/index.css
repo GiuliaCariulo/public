@@ -20,7 +20,7 @@ img, video {
 
 html {
   letter-spacing: 4%;
-  color: red;
+  color: var(--color-black);
   font-family: Waldenburg;
   font-size: 16px;
   line-height: 100%;
