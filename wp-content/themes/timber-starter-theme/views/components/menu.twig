@@ -74,9 +74,9 @@
         </li>
       </ul>
       <ul>
-        <li class="menu-item"><a href="">À propos</a></li>
-        <li class="menu-item"><a href="">Nous soutenir</a></li>
-        <li class="menu-item"><a href="">Contact</a></li>
+      {% for item in main_nav.items %}
+        <li class="menu-item"><a href="{{item.url}}">{{item.title}}</a></li>
+      {% endfor %}
       </ul>
     </nav>
   </div>

@@ -1,0 +1,9 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  C'est la book place
+	{% for post in posts %}
+		{{ post.title }}
+	{% endfor %}
+	
+{% endblock %}

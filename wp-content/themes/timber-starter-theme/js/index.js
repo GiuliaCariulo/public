@@ -26,6 +26,20 @@ $8973aab45c5aa6ba$var$accordionHeaders.forEach(function(header) {
         }
     });
 });
+// Wrapper
+const $8973aab45c5aa6ba$var$cards = document.querySelectorAll(".card");
+const $8973aab45c5aa6ba$var$filters = document.querySelectorAll("input[name='type']");
+$8973aab45c5aa6ba$var$filters.forEach((filter)=>{
+    filter.addEventListener("click", function() {
+        const value = filter.value;
+        $8973aab45c5aa6ba$var$cards.forEach((card)=>{
+            const type = card.getAttribute("data-type");
+            if (value === "") card.classList.remove("hide");
+            else if (type === value) card.classList.remove("hide");
+            else card.classList.add("hide");
+        });
+    });
+});
 
 
 //# sourceMappingURL=index.js.map

@@ -8,15 +8,14 @@
       <div>
         <h2>{{post.post_title}}</h2>
         <p>
-          {{post.post_content}}
+          {{post.meta('card-description')}}
         </p>
       </div>
-      <a href=""> Lire l'article </a>
+      <a href="{{post.guid}}"> Lire l'article </a>
     </div>
     <div class="card-picture">
-      <img src="img/example.jpg" alt="image's description" />
+      <img src="{{ post.thumbnail.src }}" alt="image's description" />
     </div>
   </div>
 </article>
 
-{# {{dump(post)}} #}
