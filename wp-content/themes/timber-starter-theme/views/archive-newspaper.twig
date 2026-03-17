@@ -1,0 +1,9 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  C'est la newspaper place
+	{% for post in posts %}
+		{{ post.title }}
+	{% endfor %}
+	
+{% endblock %}
