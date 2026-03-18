@@ -31,6 +31,19 @@ $context['page'] = $timber_post;
 $posts     = Timber::get_posts([
     'post_type' => 'post',
 ]);
+
+$context['month-article'] = Timber::get_posts([
+    'post_type' => 'month-article',
+    'posts_per_page' => 1 // si tu veux un seul élément
+]);
+
+
+Timber::render('month-article', $context);
+
+$context['posts'] = Timber::get_posts(
+	['post_type' => 'video', 'podcast', 'month-article', 'newspaper', 'book']
+);
+
 $context['posts'] = $posts;
 
 // avec le $ c'est des variables php donc ici je pourrais écrire $articles à la place de $posts

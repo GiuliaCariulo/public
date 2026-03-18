@@ -1,9 +1,11 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  C'est la month article place
+<h2>Les article du mois</h2>
+	{% include "components/filter.twig" %}
+	<section class="cards-library">
 	{% for post in posts %}
-		{{ post.title }}
+		{% include 'components/card.twig' %}
 	{% endfor %}
-	
+	</section>
 {% endblock %}

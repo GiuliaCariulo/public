@@ -60,6 +60,7 @@ html {
 
 body {
   background-color: var(--color-white);
+  padding: 2.5rem 1rem 2rem;
 }
 
 header {
@@ -67,18 +68,17 @@ header {
   width: 100%;
   padding: 1rem 1rem .5rem;
   position: fixed;
-}
-
-main {
-  padding-top: 3rem;
-}
-
-section {
-  padding: 2rem 1rem;
+  top: 1.5rem;
+  left: 0;
 }
 
 footer {
   background-color: var(--color-black);
+  margin: 0 -1rem -1rem;
+}
+
+section {
+  padding-bottom: 3rem;
 }
 
 .top-bar {
@@ -205,8 +205,8 @@ nav.menu-mobile {
   width: 1.5rem;
 }
 
-section.month-hero, .month-hero section {
-  padding: 0;
+section.month-hero {
+  margin: 0 -1rem;
 }
 
 .month-hero a {
@@ -667,13 +667,8 @@ p.article-info {
 
 footer {
   flex-direction: column;
-  gap: 3rem;
-  padding: 10rem 1rem 1rem;
+  padding: 2rem 1rem 0;
   display: flex;
-}
-
-footer section {
-  padding: 0;
 }
 
 .footer .card, .footer .card h2 {
@@ -685,7 +680,7 @@ footer section {
 }
 
 .footer-nav {
-  gap: 3rem;
+  gap: 2rem;
   display: flex;
 }
 
@@ -702,6 +697,7 @@ footer section {
 
 .footer-credit {
   text-align: center;
+  padding-bottom: 1rem;
   font-size: .75rem;
 }
 /*# sourceMappingURL=index.css.map */
