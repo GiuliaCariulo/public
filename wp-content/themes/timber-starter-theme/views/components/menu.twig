@@ -6,7 +6,7 @@
   </button>
   <div class="menu-mobile">
     <nav>
-      <ul class="accordion">
+      {# <ul class="accordion">
         <li class="menu-item accordion">
           <h2>L'article du mois</h2>
           <div class="accordion-item accordion-item-open">
@@ -72,7 +72,7 @@
             </a>
           </div>
         </li>
-      </ul>
+      </ul> #}
       <ul>
       {% for item in main_nav.items %}
         <li class="menu-item"><a href="{{item.url}}">{{item.title}}</a></li>
