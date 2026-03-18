@@ -22,6 +22,7 @@
 
     {% include "components/header.twig" %}
 		 
+	<main>
 		<section id="content" role="main" class="content-wrapper">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
 			<div class="wrapper">
@@ -35,8 +36,10 @@
 				</aside>
 			{% endif %}
 		</section>
+
 		{% include "components/support.twig" %}
 		{% include "components/contact.twig" %}
+		</main>
 		{% block footer %}
 			<footer id="footer">
 				{% include 'components/footer.twig' %}

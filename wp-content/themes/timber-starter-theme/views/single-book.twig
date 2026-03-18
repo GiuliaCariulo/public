@@ -1,5 +1,37 @@
 {% extends "base.twig" %}
 
 {% block content %}
-<h1>hello world book</h1>
+<article class="article">
+          <div class="article-hero">
+            <img src="{{ post.thumbnail.src }}" alt="" />
+          </div>
+          <h1>
+            {{post.post_title}}
+          </h1>
+          <div class="article-infos-position-two">
+            <div>
+              <p class="article-hook">
+                Du féminisme et des sciences humaines en BD
+              </p>
+              <div class="article-infos">
+                <p class="article-info article-duration">
+                  Temps de lecture estimée: {{post.meta('duree')}}
+                </p>
+                
+                <p class="article-info article-date">
+                  Publié le 12 février 2026
+                </p>
+                <br>
+                <p class="article-info article-author">
+                  Écrit par <span>{{post.author}}</span>
+                </p>
+                <p class="article-info article-edition">
+                  Maison d'édition: Les insolentes
+                </p>
+              </div>
+            </div>
+            <img src="{{ post.thumbnail.src }}" alt="" />
+          </div>
+          {{post.content}}
+        </article>
 {% endblock %}

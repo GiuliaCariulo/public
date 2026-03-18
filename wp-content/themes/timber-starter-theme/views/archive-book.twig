@@ -1,9 +1,11 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  C'est la book place
+<h2>Les livres</h2>
+	{% include "components/filter.twig" %}
+	<section class="cards-library">
 	{% for post in posts %}
-		{{ post.title }}
+		{% include 'components/card.twig' %}
 	{% endfor %}
-	
+	</section>
 {% endblock %}
