@@ -1,0 +1,6 @@
+<section class="cards-library" >
+		<h2>D'autres livres</h2>
+		{% for post in related_type_posts %}
+			{% include 'components/card.twig' %}
+		{% endfor %}
+</section>

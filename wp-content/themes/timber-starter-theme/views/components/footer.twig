@@ -1,9 +1,9 @@
  <footer class="footer">
       <section class="cards-library">
         <h2>Ces articles pourraient vous intéresser</h2>
-		{% include "components/card.twig" %}
-		{% include "components/card.twig" %}
-		{% include "components/card.twig" %}
+		{% for post in footer_posts %}
+		{% include 'components/card.twig' %}
+		{% endfor %}
       </section>
       <section>
         <h2>À retrouver</h2>

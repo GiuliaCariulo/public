@@ -1,0 +1,6 @@
+<section class="cards-library" >
+		<h2>Sur le même thème</h2>
+		{% for post in related_taxonomy_posts %}
+		{% include 'components/card.twig' %}
+		{% endfor %}
+</section>

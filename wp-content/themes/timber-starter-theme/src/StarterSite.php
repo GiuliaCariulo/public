@@ -46,6 +46,17 @@ class StarterSite extends Site {
 		$context['taxonomy_nav'] = Timber::get_menu('taxonomy nav');
 		$context['theme_uri']  = get_template_directory_uri();
 		$context['site']  = $this;
+		$postArgs = array(
+  		'post_type' => array('book','podcast','month-article','newspaper','video'),
+  		'post_status' => 'publish',
+  		'orderby' => 'date',
+  		'order' => 'DESC',
+  		'posts_per_page' => 3,
+);
+ 
+$context['footer_posts'] = Timber::get_posts($postArgs);
+ 
+
 
 		return $context;
 	}
