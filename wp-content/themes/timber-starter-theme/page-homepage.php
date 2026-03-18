@@ -28,21 +28,32 @@ $context['page'] = $timber_post;
 
 
 // demander à une ia pour la page taxonomie livre, viens chercher tous les posts taxonomie livre et catégorie féminisme
-$posts     = Timber::get_posts([
-    'post_type' => 'post',
-]);
+// $posts     = Timber::get_posts([
+//     'post_type' => 'post',
+// ]);
 
-$context['month-article'] = Timber::get_posts([
-    'post_type' => 'month-article',
-    'posts_per_page' => 1 // si tu veux un seul élément
-]);
+// $context['month-article'] = Timber::get_posts([
+//     'post_type' => 'month-article',
+//     'posts_per_page' => 1 
+// ]);
 
 
-Timber::render('month-article', $context);
+// Timber::render('month-article', $context);
 
-$context['posts'] = Timber::get_posts(
-	['post_type' => 'video', 'podcast', 'month-article', 'newspaper', 'book']
+// $context['posts'] = Timber::get_posts(
+// 	['post_type' => 'video', 'podcast', 'month-article', 'newspaper', 'book']
+// );
+
+$postArgs = array(
+  'post_type' => array('month-article','newspaper','podcast','video'), //Add this line'posts_per_page' => 20,
+  'post_status' => 'publish',
+  'orderby' => 'post__in',
+  'post__in' => $post_ids,
+  'posts_per_page' => -1
+
 );
+
+$posts = get_posts($postArgs);
 
 $context['posts'] = $posts;
 
