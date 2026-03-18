@@ -43,6 +43,7 @@ class StarterSite extends Site {
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
 		$context['menu']  = Timber::get_menu();
 		$context['main_nav'] = Timber::get_menu('main nav');
+		$context['taxonomy_nav'] = Timber::get_menu('taxonomy nav');
 		$context['theme_uri']  = get_template_directory_uri();
 		$context['site']  = $this;
 

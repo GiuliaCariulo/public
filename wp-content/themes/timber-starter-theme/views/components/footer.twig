@@ -12,6 +12,9 @@
       {% for item in main_nav.items %}
         <li class="menu-item"><a href="{{item.url}}">{{item.title}}</a></li>
       {% endfor %}
+      {% for item in taxonomy_nav.items %}
+        <li class="menu-item"><a href="{{item.url}}">{{item.title}}</a></li>
+      {% endfor %}
       </ul>
         </nav>
       </section>

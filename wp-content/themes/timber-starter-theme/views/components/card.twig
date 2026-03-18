@@ -1,6 +1,7 @@
-<article class="card">
+{% set category = get_terms()|first %}
+<article class="card" data-type="{{category.name}}">
   <div class="card-infos">
-    <address>Écrit par Ragekit</address>
+    <address>{{post.author.display_name}}</address>
     <time datetime="2026-02-12">12.02.26</time>
   </div>
   <div class="card-container">
@@ -11,11 +12,12 @@
           {{post.post_excerpt}}
         </p>
       </div>
-      <a href="{{post.guid}}"> Lire l'article </a>
+      <a href="{{post.guid}}"> Lire l'article</a>
     </div>
     <div class="card-picture">
       <img src="{{ post.thumbnail.src }}" alt="image's description" />
     </div>
   </div>
 </article>
+
 

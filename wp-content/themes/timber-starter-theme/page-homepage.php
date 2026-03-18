@@ -32,11 +32,10 @@ $context['page'] = $timber_post;
 //     'post_type' => 'post',
 // ]);
 
-// $context['month-article'] = Timber::get_posts([
-//     'post_type' => 'month-article',
-//     'posts_per_page' => 1 
-// ]);
-
+$context['month_article'] = Timber::get_post([
+    'post_type' => 'month-article',
+    'posts_per_page' => 1
+]);
 
 // Timber::render('month-article', $context);
 
@@ -44,18 +43,17 @@ $context['page'] = $timber_post;
 // 	['post_type' => 'video', 'podcast', 'month-article', 'newspaper', 'book']
 // );
 
+ 
 $postArgs = array(
-  'post_type' => array('month-article','newspaper','podcast','video'), //Add this line'posts_per_page' => 20,
+  'post_type' => array('book','podcast','month-article','newspaper','video'),
   'post_status' => 'publish',
-  'orderby' => 'post__in',
-  'post__in' => $post_ids,
-  'posts_per_page' => -1
-
+  'orderby' => 'date',
+  'order' => 'DESC',
+  'posts_per_page' => -1,
 );
-
-$posts = get_posts($postArgs);
-
-$context['posts'] = $posts;
+ 
+$context['posts'] = Timber::get_posts($postArgs);
+ 
 
 // avec le $ c'est des variables php donc ici je pourrais écrire $articles à la place de $posts
 

@@ -67,7 +67,7 @@ html {
   }
 }
 
-h1 {
+#site-name {
   display: none;
 }
 
@@ -185,12 +185,11 @@ button.menu-burger {
 nav.menu-mobile {
   flex-direction: column;
   align-items: flex-end;
-  gap: 2.25rem;
+  gap: 4rem;
   display: flex;
 }
 
 .menu-mobile h2, .menu-mobile a {
-  font-size: 1.5rem;
   font-weight: 800;
   text-decoration: none;
 }
@@ -200,6 +199,13 @@ nav.menu-mobile {
   width: 80vw;
   padding: 1.2rem;
   list-style-type: none;
+}
+
+li.menu-taxonomy {
+  text-transform: uppercase;
+  padding: 2rem 1.2rem;
+  font-family: Waldenburg\, medium;
+  font-size: 1rem;
 }
 
 .menu-mobile.is-active {
@@ -652,8 +658,8 @@ input[type="radio"]:checked + .filter-label {
   display: block;
 }
 
-.article p {
-  margin-bottom: .5rem;
+.article-content p {
+  margin-bottom: 1.5rem;
 }
 
 p.article-quote {
@@ -682,6 +688,7 @@ p.article-info {
 .article-infos-position-two {
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1rem;
+  margin-bottom: 3rem;
   display: grid;
 }
 
