@@ -15,7 +15,11 @@
       <a href="{{post.guid}}"> Lire l'article</a>
     </div>
     <div class="card-picture">
+      {% if post.thumbnail.src %}
       <img src="{{ post.thumbnail.src }}" alt="image's description" />
+      {% else  %}
+      <div class="card-picture-placeholder"></div>
+      {% endif %}
     </div>
   </div>
 </article>
