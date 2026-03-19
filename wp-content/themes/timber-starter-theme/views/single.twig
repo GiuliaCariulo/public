@@ -3,7 +3,7 @@
 {% block content %}
 <article class="article">
           <div class="article-hero">
-            <img src="{{ post.thumbnail.src }}" alt="" />
+            <img src="{{ post.thumbnail.src }}" alt="{{post.meta('card-description')}}" />
           </div>
           <h1>
             {{post.post_title}}

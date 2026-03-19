@@ -2,9 +2,6 @@
 
 {% block content %}
 <article class="article">
-          {# <div class="article-hero">
-            <img src="{{ post.thumbnail.src }}" alt="" />
-          </div> #}
           <h1>
             {{post.post_title}}
           </h1>
@@ -30,7 +27,7 @@
                 </p>
               </div>
             </div>
-            <img src="{{ post.thumbnail.src }}" alt="" />
+            <img src="{{ post.thumbnail.src }}" alt="{{post.meta('card-description')}}" />
           </div>
           <div class="article-content">
           {{post.content}}

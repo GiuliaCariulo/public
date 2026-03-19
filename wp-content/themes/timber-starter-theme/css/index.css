@@ -273,11 +273,11 @@ li.menu-taxonomy {
 }
 
 section.month-hero {
-  margin: 0 -3rem;
+  margin: 0 -1rem;
 }
 
 .month-hero a {
-  background-image: url("../img/example.jpg");
+  background-image: url("../img/month_feminisme-modern.jpg");
   background-position: center;
   background-size: cover;
   justify-content: space-between;
@@ -316,6 +316,10 @@ section.month-hero {
 @media (width >= 1024px) {
   .month-hero a {
     padding: 18rem 0 2rem;
+  }
+
+  section.month-hero {
+    margin: 0 -3rem;
   }
 }
 
@@ -394,7 +398,7 @@ article.card {
   filter: grayscale();
   width: 100%;
   height: 100%;
-  transition: filter 1s;
+  transition: filter .3s;
 }
 
 .card:hover .card-picture img {
@@ -671,7 +675,10 @@ input[type="radio"]:checked + .filter-label {
 }
 
 .article-hero {
-  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  margin-bottom: 3rem;
   overflow: hidden;
 }
 
@@ -682,6 +689,12 @@ input[type="radio"]:checked + .filter-label {
   font-weight: 800;
   line-height: 100%;
   display: block;
+}
+
+h1.article-taxonomy {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .article-content p {
@@ -743,6 +756,10 @@ p.article-info {
 
   .article-infos-position-two div {
     grid-column: 1 / 3;
+  }
+
+  .article-hero {
+    height: 500px;
   }
 }
 
