@@ -395,7 +395,7 @@ article.card {
 }
 
 svg.card-article-type {
-  filter: drop-shadow(1px 4px 4px #000);
+  filter: drop-shadow(0 5px 5px #ffffff26);
   z-index: 1;
   width: fit-content;
   height: 1.5rem;
