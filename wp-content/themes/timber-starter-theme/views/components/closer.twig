@@ -1,16 +1,21 @@
 <section class="closer">
         <div>
-          <h2>De plus près</h2>
+          <h2><span>{{post.meta('edition')}}</span> de plus près</h2>
           <ul>
             <li>
               <h3>
-                Quelle est la ligne éditoriale de <span>Contre Attaqe</span>
+                Quelle est sa ligne éditoriale ?
               </h3>
               <p>
-                Contre Attaque souhaite incarner une contre attaque à la fois
-                médiatique, culturelle et politique. Le collectif propose une
-                information indépendante et gratuite, au service des
-                mobilisations en cours.
+                {{post.meta('ligne_editorial')}}
+              </p>
+            </li>
+            <li>
+              <h3>
+                Quelle est son modèle économique ?
+              </h3>
+              <p>
+                {{post.meta('modele_economique')}}
               </p>
             </li>
           </ul>

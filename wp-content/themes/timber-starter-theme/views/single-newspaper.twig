@@ -4,6 +4,13 @@
 <article class="article">
 <img class="article-hero" src="{{ post.thumbnail.src }}" alt="{{ post.meta('description-card') }}">
 <h1>{{post.post_title}}</h1>
- {{post.post_content}}
+{{post.post_content}}
+<br>
+<section>
+<a class="btn btn-secondary" href="{{post.meta('link_media')}}">Aller sur l'article</a>
+</section>
+{% include "components/closer.twig" %}
+
 </article>
+
 {% endblock %}

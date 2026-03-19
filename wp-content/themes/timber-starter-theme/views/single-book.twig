@@ -32,6 +32,10 @@
           <div class="article-content">
           {{post.content}}
           </div>
+        <section>
+        <a class="btn btn-secondary" href="{{post.meta('link_media')}}">Commander le livre</a>
+        </section>
+        {% include "components/closer.twig" %}
         </article>
         {% include 'components/more-category.twig' %}
         {% include 'components/more-type.twig' %}

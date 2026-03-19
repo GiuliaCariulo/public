@@ -1,9 +1,16 @@
 {% extends "base.twig" %}
 
 {% block content %}
+
 <article class="article">
+<section>
+<img src="{{ post.thumbnail.src }}" alt="{{post.meta('card-description')}}">
 <h1>{{post.post_title}}</h1>
-<p>iframe audio</p>
 {{post.post_content}}
+<br>
+<a class="btn btn-secondary" href="{{post.meta('link_media')}}">Écouter le podcast</a>
+</section>
+{% include "components/closer.twig" %}
 </article>
-{% endblock %}
+{%
+ endblock %}
