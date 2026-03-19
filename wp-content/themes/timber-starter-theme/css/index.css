@@ -1,11 +1,13 @@
 @font-face {
-  font-family: Waldenburg\, Thin;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedThin.woff2") format("woff2");
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: Waldenburg\, Light;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedLight.woff2") format("woff2");
+  font-weight: 300;
 }
 
 @font-face {
@@ -14,28 +16,33 @@
 }
 
 @font-face {
-  font-family: Waldenburg\, Book;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedBook.woff2") format("woff2");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedMedium.woff2") format("woff2");
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: Waldenburg\, Bold;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedBold.woff2") format("woff2");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: Waldenburg\, Black;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedBlack.woff2") format("woff2");
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: Waldenburg\, Heavy;
+  font-family: Waldenburg;
   src: url("../fonts/KMRWaldenburg-CondensedHeavy.woff2") format("woff2");
+  font-weight: 900;
 }
 
 * {
@@ -56,8 +63,9 @@ img, video {
 html {
   letter-spacing: 5%;
   color: var(--color-black);
-  font-family: Waldenburg\, Light;
+  font-family: Waldenburg;
   font-size: 18px;
+  font-weight: 100;
   line-height: 140%;
 }
 
@@ -79,7 +87,8 @@ h2 {
 }
 
 h1, h2, h3 {
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
+  font-weight: 600;
   line-height: 100%;
 }
 
@@ -205,8 +214,9 @@ nav.menu-mobile {
 li.menu-taxonomy {
   text-transform: uppercase;
   padding: 2rem 1.2rem;
-  font-family: Waldenburg\, medium;
+  font-family: Waldenburg;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .menu-mobile.is-active {
@@ -263,7 +273,7 @@ li.menu-taxonomy {
 }
 
 section.month-hero {
-  margin: 0 -1rem;
+  margin: 0 -3rem;
 }
 
 .month-hero a {
@@ -519,14 +529,16 @@ article.card {
   background-color: var(--color-red);
   color: var(--color-white);
   border-color: var(--color-red);
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
+  font-weight: 600;
   transform: scale(1.02);
 }
 
 .btn-secondary:hover {
   color: var(--color-red);
   background-color: var(--color-white);
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
+  font-weight: 600;
   transform: scale(1.2);
 }
 
@@ -628,14 +640,16 @@ label.filter-label {
 .filter-label:hover {
   border: 2px solid var(--color-red);
   color: var(--color-red);
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
+  font-weight: 600;
 }
 
 input[type="radio"]:checked + .filter-label {
   background: var(--color-red);
   border: 2px solid var(--color-red);
   color: var(--color-white);
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
+  font-weight: 600;
 }
 
 .closer div {
@@ -677,8 +691,9 @@ input[type="radio"]:checked + .filter-label {
 p.article-quote {
   color: var(--color-red);
   padding: 1rem 0;
-  font-family: Waldenburg\, Medium;
+  font-family: Waldenburg;
   font-size: 2rem;
+  font-weight: 600;
   line-height: 100%;
 }
 
