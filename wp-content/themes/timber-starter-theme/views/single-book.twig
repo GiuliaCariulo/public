@@ -12,18 +12,21 @@
               </p>
               <div class="article-infos">
                 <p class="article-info article-duration">
-                  Temps de lecture estimée: {{post.meta('duree')}}
+                  {% include "components/lecture-duree.twig" %}
                 </p>
                 
                 <p class="article-info article-date">
-                  Publié le 12 février 2026
+                  {% include "components/date-parution.twig" %}
                 </p>
                 <br>
                 <p class="article-info article-author">
-                  Écrit par <span>{{post.author}}</span>
+                {% include "components/author.twig" %}  
                 </p>
                 <p class="article-info article-edition">
-                  Maison d'édition: Les insolentes
+                  {% include "components/author.twig" %}
+                </p>
+                <p class="article-info article-edition">
+                  {{post.meta('edition')}}
                 </p>
               </div>
             </div>
