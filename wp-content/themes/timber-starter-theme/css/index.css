@@ -390,7 +390,18 @@ article.card {
 .card-picture {
   width: 50%;
   height: 8rem;
+  position: relative;
   overflow: hidden;
+}
+
+svg.card-article-type {
+  filter: drop-shadow(1px 4px 4px #000);
+  z-index: 1;
+  width: fit-content;
+  height: 1.5rem;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
 }
 
 .card-picture img {

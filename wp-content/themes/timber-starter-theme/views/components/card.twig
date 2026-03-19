@@ -15,8 +15,9 @@
       <a href="{{post.guid}}">Lire l'article</a>
     </div>
     <div class="card-picture">
+    <svg class="card-article-type"></svg>
       {% if post.thumbnail.src %}
-      <img src="{{ post.thumbnail.src }}" alt="image's description" />
+      <img src="{{ post.thumbnail.src }}" alt="{{ post.meta('card-description') }}" />
       {% else  %}
       <div class="card-picture-placeholder"></div>
       {% endif %}
